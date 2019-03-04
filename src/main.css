@@ -3,13 +3,37 @@ body {
     flex-direction: column;
 }
 
-/* header
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: red;
+}
 
-ul
+/* ul
 
-footer */
+footer */ 
 
 dl {
+    display: flex;
+    flex-flow: row wrap;
     border: 2px solid black;
+    width: 600px;
+    padding: 20px;
+    font-size: 22px;
     background: silver;
+}
+
+dt {
+    flex-basis: 15%;
+    text-align: right;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+dd {
+    flex-basis: 75%;
+    flex-grow: 1;
+     margin: 0;
 }
