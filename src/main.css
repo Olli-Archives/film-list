@@ -3,8 +3,13 @@ body {
     flex-direction: column;
 }
 
-header
+/* header
 
 ul
 
-footer
+footer */
+
+dl {
+    border: 2px solid black;
+    background: silver;
+}
