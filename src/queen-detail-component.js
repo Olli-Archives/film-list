@@ -1,5 +1,3 @@
-import queenList from '../data/queen-list.js';
-
 export function makeQueenTable(queen) {
     const html = `
         <dl>
@@ -21,11 +19,8 @@ export function makeQueenTable(queen) {
 }
 
 export default function loadQueenTable(queen) {
+    console.log(queen);
     const queenTableNode = document.getElementById('queen-table');
-    const params = new URLSearchParams(window.location.search);
-    const queenToFind = params.get('name');
-    const queenName = queenList[queenToFind];
-    console.log(queenToFind);
-    const queenTable = makeQueenTable(queenName);
+    const queenTable = makeQueenTable(queen)
     queenTableNode.appendChild(queenTable);
 }
