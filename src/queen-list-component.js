@@ -1,7 +1,5 @@
-import queenList from '../data/queen-list.js';
-
 export function makeQueenList(queen) { 
-    const href = 'queen-detail.html?name=' + encodeURIComponent(queen.name);
+    const href = 'queen-detail.html?id=' + encodeURIComponent(queen.id);
     const template = document.createElement('template');
     template.innerHTML = `<li><a href="${href}">${queen.name}</a></li>`;
     return template.content;
