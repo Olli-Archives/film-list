@@ -1,12 +1,8 @@
 const seasons = [];
 
-function forEachSeason(seasonsArray){
+export function forEachSeason(seasonsArray) {
     seasonsArray.forEach(season => {
         seasons.push(season.seasonNumber);
-        /*
-        
-         */
-    
     });
 }
 
@@ -17,7 +13,7 @@ export function makeQueenTable(queen) {
             <dt>Name:</dt>
             <dd>${queen.name}</dd>
             <dt>Seasons:</dt>
-            <dd>${seasons.join(' ')}</dd>
+            <dd>${seasons.join(', ')}</dd>
             <dt>Winner:</dt>
             <dd>${queen.winner ? 'Yes' : 'No'}</dd>
             <dt>Miss Congeniality:</dt>
