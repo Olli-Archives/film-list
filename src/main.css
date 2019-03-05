@@ -19,21 +19,21 @@ dl {
     display: flex;
     flex-flow: row wrap;
     border: 2px solid black;
-    width: 600px;
+    width: 800px;
     padding: 20px;
     font-size: 22px;
     background: silver;
 }
 
 dt {
-    flex-basis: 15%;
+    flex-basis: 25%;
     text-align: right;
     margin-right: 10px;
     font-weight: bold;
 }
 
 dd {
-    flex-basis: 75%;
+    flex-basis: 70%;
     flex-grow: 1;
      margin: 0;
 }

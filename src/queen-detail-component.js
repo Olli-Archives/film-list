@@ -1,10 +1,23 @@
+const seasons = [];
+
+function forEachSeason(seasonsArray){
+    seasonsArray.forEach(season => {
+        seasons.push(season.seasonNumber);
+        /*
+        
+         */
+    
+    });
+}
+
 export function makeQueenTable(queen) {
+    forEachSeason(queen.seasons);
     const html = `
         <dl>
             <dt>Name:</dt>
             <dd>${queen.name}</dd>
             <dt>Seasons:</dt>
-            <dd>${queen.seasons}</dd>
+            <dd>${seasons.join(' ')}</dd>
             <dt>Winner:</dt>
             <dd>${queen.winner ? 'Yes' : 'No'}</dd>
             <dt>Miss Congeniality:</dt>
@@ -21,6 +34,6 @@ export function makeQueenTable(queen) {
 export default function loadQueenTable(queen) {
     console.log(queen);
     const queenTableNode = document.getElementById('queen-table');
-    const queenTable = makeQueenTable(queen)
+    const queenTable = makeQueenTable(queen);
     queenTableNode.appendChild(queenTable);
 }
