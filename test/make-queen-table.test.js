@@ -1,9 +1,18 @@
 import { makeQueenTable } from '../src/queen-detail-component.js';
+import { forEachSeason } from '../src/queen-detail-component.js';
+
 const test = QUnit.test;
 
 const queen = {
     name: 'Trixie Mattel',
-    seasons: '7, AS3',
+    seasons: [
+        {
+            seasonNumber: 7
+        }, 
+        {
+            seasonNumber: 'AS3'
+        }
+    ],
     winner: true,
     missCongeniality: false,
     quote: 'Okay, calm down there public school.',

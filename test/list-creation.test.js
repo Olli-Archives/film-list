@@ -3,10 +3,10 @@ const test = QUnit.test;
 
 QUnit.module('test list template creation');
 
-const queen = { name: 'Trixie Mattel' };
+const queen = { name: 'Trixie Mattel', id: 89 };
 
 test('make queen list from data using template', assert => {
-    const expected = `<li><a href=\"queen-detail.html?name=Trixie%20Mattel\">Trixie Mattel</a></li>`;
+    const expected = `<li><a href="queen-detail.html?id=89">Trixie Mattel</a></li>`;
 
     const result = makeQueenList(queen);
 
